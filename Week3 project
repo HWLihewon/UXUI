@@ -1,0 +1,15 @@
+import 'dart:math';
+
+void main(){
+  var sum = 0;
+  var count = 0;
+  
+  while(sum < 100) {
+    var faceValue = Random().nextInt(6) + 1;
+    sum += faceValue;
+    count++;
+    print('주사위를 굴린 횟수: $count번 $faceValue, 누적합: $sum');
+  }
+  
+  print('주사위를 굴린 횟수는 $count번이고, 누적합은 $sum 입니다.');
+}
